@@ -6,7 +6,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 load_dotenv()
 
 # Initialize the Gemini model
-model = ChatGoogleGenerativeAI(model='gemini-3.5-flash-lite')  # 
+model = ChatGoogleGenerativeAI(model='gemini-3.5-flash-lite') 
 
 # Maintain conversation history using LangChain message objects
 chat_history = []
