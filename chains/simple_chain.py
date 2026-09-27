@@ -12,6 +12,7 @@ model = ChatGoogleGenerativeAI(model="gemini-3.5-flash")
 
 parser = StrOutputParser()
 
+#first making of the prompt then its coming into the model, and its response in becoming the input in the parser which is extracting the string resopnse
 chain = prompt | model | parser
 
 result = chain.invoke({'topic':'cricket'})
